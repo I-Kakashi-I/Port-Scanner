@@ -3,7 +3,7 @@ import termcolor
 import pyfiglet
 
 result = pyfiglet.figlet_format("Port Scanner", font = "slant"  )
-print(result)
+print(termcolor.colored(result,'blue'))
 
 def scan(target, ports):
 	print('\n' + termcolor.colored(' Starting Scan For ' + str(target),'red'))
