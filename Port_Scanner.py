@@ -15,7 +15,7 @@ def scan_port(ipaddress, port):
 	try:
 		sock = socket.socket()
 		sock.connect((ipaddress, port))
-		print(termcolor.colored("[+] Port Opened " + str(port)), 'green')
+		print(termcolor.colored("[+] Port Opened " + str(port), 'green'))
 		sock.close()
 	except:
 		pass
